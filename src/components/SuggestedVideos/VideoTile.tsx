@@ -13,7 +13,7 @@ interface VideoTileProps {
 }
 const VideoTile: React.FC<VideoTileProps> = ({thumbnail, title, channel, views, datePublished }) => {
   return (
-    <RowStack className='w-full gap-2 font-bold text-sm sm:text-base'>
+    <RowStack className='w-full gap-2 font-bold text-sm'>
         <img src={thumbnail} className='rounded-lg aspect-video w-[45%]'/>
         <ColumnStack className='md:w-1/2 gap-2 my-2'>
             <p className='text-white line-clamp-2'>{title}</p>
