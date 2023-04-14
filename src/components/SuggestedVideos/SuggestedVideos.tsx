@@ -14,7 +14,13 @@ const SuggestedVideos = () => {
       // .then(() => setLoading(false))
     }
 
-    fetchPlaylistVideos();
+    const delayCall = setTimeout(() => {
+      fetchPlaylistVideos();
+    }, 1000)
+
+    return () => {
+      clearTimeout(delayCall);
+    };
 
   }, [])
 
