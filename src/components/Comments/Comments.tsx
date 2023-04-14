@@ -15,6 +15,7 @@ const Comments = () => {
     }
 
     //fetchComments()
+    //disabling api call to prevent error due to rate limiting
   }, [])
 
   // if(loading) return <>loading...</>
