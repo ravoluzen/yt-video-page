@@ -5,7 +5,7 @@ const options = {
     url: `https://youtube138.p.rapidapi.com/video/comments/`,
     params: {id: 'kJQP7kiw5Fk', hl: 'en', gl: 'US'},
     headers: {
-        'X-RapidAPI-Key': process.env.NEXT_PUBLIC_API_KEY,
+        'X-RapidAPI-Key': `${process.env.NEXT_PUBLIC_API_KEY}`,
         'X-RapidAPI-Host': 'youtube138.p.rapidapi.com',
       }
   };
