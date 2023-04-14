@@ -14,10 +14,10 @@ const Comments = () => {
       .then(() => setLoading(false))
     }
 
-    fetchComments()
+    //fetchComments()
   }, [])
 
-  if(loading) return <>loading...</>
+  // if(loading) return <>loading...</>
 
   return (
     <ColumnStack className="gap-2 order-3 w-full lg:w-[66vw]">
